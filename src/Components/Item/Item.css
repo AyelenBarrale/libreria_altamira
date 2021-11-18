@@ -1,0 +1,14 @@
+.card {
+    min-height: 100%;
+}
+
+
+.item-body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+
