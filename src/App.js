@@ -13,7 +13,7 @@ import NavBar from "./Components/NavBar/Navbar";
 import Footer from "./Components/Footer/Footer";
 
 import Home from "./views/Home/Home";
-import Talleres from "./views/Talleres/Talleres";
+import Contacto from "./views/Contacto/Contacto";
 import Nosotros from "./views/Nosotros/Nosotros";
 import Cart from "./Components/Cart/Cart";
 import CheckOut from "./views/CheckOut/CheckOut";
@@ -26,13 +26,19 @@ const App = ()=> {
           <div className='main-container'>
             <NavBar
               item1={"Categoría:"}
-              item2={"Talleres"}
-              item3={"Nosotros"}
+              item2={"Nosotros"}
+              item3={"Contacto"}
               subitem0={"Todos"}
-              subitem1={"Artística"}
-              subitem2={"Librería"}
-              subitem3={"Mercería"}
-              subitem4={"Emprendedores"}
+              subitem1={"Escolar"}
+              subitem2={"Libros"}
+              subitem3={"Mochilas"}
+              subitem4={"Arte"}
+              subitem5={"Boligrafos"}
+              subitem6={"Oficina"}
+              subitem7={"Calculadoras"}
+              subitem8={"Globos terraqueos"}
+              subitem9={"Parker"}
+              subitem10={"Posca"}
             />
           </div>
 
@@ -41,8 +47,8 @@ const App = ()=> {
             <Route path='/categoria/:categoryName'>
               <ItemListContainer />
             </Route>
-            <Route path='/talleres' component={Talleres} />
             <Route path='/nosotros' component={Nosotros} />
+            <Route path='/contacto' component={Contacto} />
             <Route path='/item/:id'>
               <ItemDetailContainer />
             </Route>

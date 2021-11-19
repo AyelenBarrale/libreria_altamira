@@ -18,6 +18,12 @@ const NavBar = ({
   subitem3,
   subitem4,
   subitem0,
+  subitem5,
+  subitem6,
+  subitem7,
+  subitem8,
+  subitem9,
+  subitem10,
 }) => {
   const history = useNavigate();
 
@@ -45,15 +51,21 @@ const NavBar = ({
           <p className='buscar-txt'>{item1}</p>
           <select className='select-container' onChange={handleChange}>
             <option value='all'>{subitem0}</option>
-            <option value='artistica'>{subitem1} </option>
-            <option value='libreria'>{subitem2} </option>
-            <option value='merceria'>{subitem3} </option>
-            <option value='emprendedores'>{subitem4} </option>
+            <option value='escolar'>{subitem1} </option>
+            <option value='libros'>{subitem2} </option>
+            <option value='mochilas'>{subitem3} </option>
+            <option value='arte'>{subitem4} </option>
+            <option value='boligrafos'>{subitem5} </option>
+            <option value='oficina'>{subitem6} </option>
+            <option value='calculadoras'>{subitem7} </option>
+            <option value='globos terraqueos'>{subitem8} </option>
+            <option value='parker'>{subitem9} </option>
+            <option value='posca'>{subitem10} </option>
           </select>
-          <Link to='/talleres' className='Link'>
+          <Link to='/nosotros' className='Link'>
             {item2}
           </Link>
-          <Link to='/nosotros' className='Link'>
+          <Link to='/contacto' className='Link'>
             {item3}
           </Link>
         </Nav>

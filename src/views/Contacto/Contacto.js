@@ -1,5 +1,5 @@
 import React from "react";
-import "./../Talleres/Talleres.css";
+import "./Contacto.css";
 
 import bordado from "../Talleres/img/bordado-mex.png";
 import macrame from "../Talleres/img/macrame.png";
