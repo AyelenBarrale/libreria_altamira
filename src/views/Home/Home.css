@@ -1,0 +1,12 @@
+.slider {
+  width: 100%;
+}
+
+.home-title {
+  display: flex;
+  font-family: "Merienda One", cursive;
+  color: #282828;
+  padding: 2%;
+  justify-content: center;
+  align-items: center;
+}

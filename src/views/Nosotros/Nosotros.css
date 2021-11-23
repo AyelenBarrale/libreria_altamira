@@ -1,6 +1,8 @@
 .page-nosotros-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   margin: 3rem 7rem;
+  font-family: "Merienda One", cursive;
 }
 
 h2 {
@@ -11,19 +13,13 @@ h2 {
   text-align: left;
 }
 
-.fundadores-img {
-  margin: 4rem 0 4rem 2rem;
+.logo-img {
+  margin-bottom: 10%;
 }
 
-.espacio-img {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-bottom: 3rem;
-}
-
-.img-item {
-  width: 33%;
+.logo-body {
+  width: 100%;
+  justify-content: flex-end;
 }
 
 @media only screen and (max-width: 900px) {
@@ -36,21 +32,10 @@ h2 {
     padding: 1rem 1rem 0 1rem;
   }
 
-  .fundadores-img img {
-    margin: 0;
+  .logo-img img {
     width: 100%;
+    margin-bottom: 0;
     align-items: center;
     justify-content: center;
-  }
-  .txt-mobile {
-    display: none;
-  }
-  .espacio-img {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 8rem;
-  }
-  .img-item {
-    width: 100%;
   }
 }

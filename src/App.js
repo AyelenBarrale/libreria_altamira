@@ -7,7 +7,7 @@ import OrdersProvider from "./Contexts/OrdersContext";
 import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailContainer";
 
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import NavBar from "./Components/NavBar/Navbar";
 import Footer from "./Components/Footer/Footer";
@@ -18,7 +18,7 @@ import Nosotros from "./views/Nosotros/Nosotros";
 import Cart from "./Components/Cart/Cart";
 import CheckOut from "./views/CheckOut/CheckOut";
 
-const App = ()=> {
+const App = () => {
   return (
     <CartProvider>
       <OrdersProvider>
@@ -42,13 +42,14 @@ const App = ()=> {
             />
           </div>
 
-          <Routes>
+          <Switch>
             <Route path='/' exact component={Home} />
             <Route path='/categoria/:categoryName'>
               <ItemListContainer />
             </Route>
             <Route path='/nosotros' component={Nosotros} />
             <Route path='/contacto' component={Contacto} />
+
             <Route path='/item/:id'>
               <ItemDetailContainer />
             </Route>
@@ -59,7 +60,7 @@ const App = ()=> {
             <Route path='*'>
               <h1>404 - Page not found</h1>
             </Route>
-          </Routes>
+          </Switch>
 
           <div>
             <Footer />
@@ -68,6 +69,6 @@ const App = ()=> {
       </OrdersProvider>
     </CartProvider>
   );
-}
+};
 
 export default App;

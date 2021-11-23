@@ -28,7 +28,7 @@ const CheckoutForm = () => {
   return (
     <div className='checkout-container'>
       <div className='checkout-titles'>
-        <h2>A un click de tu compra</h2>
+        <h2>A un click de tu pedido</h2>
         <p>Completá los datos solicitados y luego confirmá tu pedido</p>
       </div>
       <form className='form-container' onSubmit={handleOnSubmit}>

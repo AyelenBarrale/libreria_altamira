@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import "./Contacto.css";
 
 import bordado from "../Talleres/img/bordado-mex.png";
@@ -36,3 +36,4 @@ const Talleres = () => {
 };
 
 export default Talleres;
+ */

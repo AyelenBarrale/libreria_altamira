@@ -1,6 +1,7 @@
 .item-container {
   display: flex;
   flex-direction: row;
+  font-family: "Merienda One", cursive;
 }
 
 .item-img {

@@ -7,21 +7,27 @@ const Footer = () => {
       <div className='footer-left'>
         <i className='fas fa-map-marker-alt'></i>
         <p className='txt-footer'>
-          Lima 742 - Barrio General Paz <br></br>
-          Córdoba, Argentina
+          Dorrego 2749 - Olavarria <br></br>
+          Buenos Aires, Argentina
         </p>
       </div>
       <div className='footer-center'>
-        <p className='txt-footer'>
-          Barrale Web Development
-          <br></br> Copyright © 2021
-        </p>
+        <div className='footer-right-1'>
+          <p className='txt-footer right'>Contactanos</p>
+          <a
+            href='https://api.whatsapp.com/send?phone=542284581210'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <i className='fab fa-whatsapp'></i>
+          </a>
+        </div>
       </div>
       <div className='footer-right'>
         <div className='footer-right-1'>
-          <p className='txt-footer right'>Seguinos en </p>
+          <p className='txt-footer right'>Instagram </p>
           <a
-            href='https://www.instagram.com/comarcadecreadores/'
+            href='https://www.instagram.com/libreriaaltamira/'
             target='_blank'
             rel='noreferrer'
           >
@@ -29,13 +35,13 @@ const Footer = () => {
           </a>
         </div>
         <div className='footer-right-2'>
-          <p className='txt-footer right'>Contactanos </p>
+          <p className='txt-footer right'>Facebook </p>
           <a
-            href='https://api.whatsapp.com/send?phone=543515430203'
+            href='https://www.facebook.com/LibreriAltamira/'
             target='_blank'
             rel='noreferrer'
           >
-            <i className='fab fa-whatsapp'></i>
+            <i className='fab fa-facebook'></i>
           </a>
         </div>
       </div>
