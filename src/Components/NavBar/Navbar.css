@@ -74,12 +74,26 @@ select:focus {
 @media only screen and (max-width: 990px) {
   #basic-navbar-nav {
     text-align: right;
+    margin-bottom: 1rem;
   }
 
   .cart-button {
     margin-right: 1rem;
   }
+
+  .buscar-txt {
+    text-align: end;
+  }
+
+  select {
+    margin-left: 50%;
+  }
+  .select-container {
+    width: 50%;
+    text-align: end;
+  }
+
   .topline {
-    visibility: hidden;
+    padding-right: 0.5rem;
   }
 }

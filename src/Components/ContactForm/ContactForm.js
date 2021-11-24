@@ -70,7 +70,7 @@ const ContactForm = () => {
           />
         </div>
         <button type='submit' className='form-button'>
-          Enviar Consulta
+          Enviar
         </button>
       </form>
     </div>

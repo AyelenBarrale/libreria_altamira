@@ -14,7 +14,7 @@ const CheckOutConfirm = () => {
         <p>Confirmá tu pedido y tu orden será enviada</p>
       </div>
       <div className='resumen-container'>
-        <h4>Resumen de compra</h4>
+        <h4>Artículos seleccionados</h4>
         {cart.map((item) => (
           <div className='products-container' key={item.id}>
             <p className='product-name'>{item.nombre} </p>
@@ -25,7 +25,7 @@ const CheckOutConfirm = () => {
       <h4>Total a pagar: ${reduceCart} </h4>
       <div className='form-container'>
         <button className='form-button' onClick={addOrden}>
-          Confirmar compra
+          Confirmar
         </button>
       </div>
     </div>

@@ -11,17 +11,17 @@ const ItemCount = ({ onAdd, product }) => {
     <div className='buttons-container'>
       <div className='buttons-block'>
         <button
-          className='item-button sumar'
-          onClick={() => setToAdd(toAdd === stock ? toAdd : toAdd + 1)}
-        >
-          +
-        </button>
-        <p className='cantidad-num'> {toAdd} </p>
-        <button
           className='item-button restar'
           onClick={() => setToAdd(toAdd > 1 ? toAdd - 1 : toAdd)}
         >
           -
+        </button>
+        <p className='cantidad-num'> {toAdd} </p>
+        <button
+          className='item-button sumar'
+          onClick={() => setToAdd(toAdd === stock ? toAdd : toAdd + 1)}
+        >
+          +
         </button>
       </div>
       <div className='añadirCart-btn'>

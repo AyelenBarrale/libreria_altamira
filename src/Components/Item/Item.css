@@ -1,15 +1,11 @@
 .card {
-    min-height: 100%;
+  min-height: 100%;
+  margin-bottom: 1rem;
 }
-
 
 .item-body {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-family: "Merienda One", cursive;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Merienda One", cursive;
 }
-
-
-
-

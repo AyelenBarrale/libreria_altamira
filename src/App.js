@@ -18,6 +18,7 @@ import Contacto from "./views/Contacto/Contacto";
 import Nosotros from "./views/Nosotros/Nosotros";
 import Cart from "./Components/Cart/Cart";
 import CheckOut from "./views/CheckOut/CheckOut";
+import WhatsappFloat from "./Components/WhatsappFloat/WhatsappFloat";
 
 const App = () => {
   return (
@@ -66,6 +67,9 @@ const App = () => {
 
             <div>
               <Footer />
+            </div>
+            <div>
+              <WhatsappFloat />
             </div>
           </Router>
         </ContactProvider>

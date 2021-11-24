@@ -10,7 +10,7 @@ const CheckOutId = () => {
     <div className='checkout-container'>
       <div className='checkout-titles'>
         <h1>Código de pedido: {keyId} </h1>
-        <p>¡Muchas gracias por tu compra!</p>
+        <p>¡Muchas gracias por tu elegirnos!</p>
       </div>
     </div>
   );
