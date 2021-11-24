@@ -15,7 +15,7 @@ const Footer = () => {
         <div className='footer-right-1'>
           <p className='txt-footer right'>Contactanos</p>
           <a
-            href='https://api.whatsapp.com/send?phone=542284581210'
+            href='https://wa.me/542284581210?text=¡Hola!%20Quisiera%20hacerles%20una%20consulta'
             target='_blank'
             rel='noreferrer'
           >

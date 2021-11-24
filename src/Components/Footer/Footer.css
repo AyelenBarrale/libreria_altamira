@@ -56,6 +56,10 @@ html {
   justify-content: center;
 }
 
+.fab:hover {
+  color: #8a3813;
+}
+
 @media only screen and (max-width: 679px) {
   .footer-container {
     display: grid;

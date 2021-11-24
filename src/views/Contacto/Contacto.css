@@ -1,31 +1,9 @@
-.talleres-container {
-  margin: 3rem 7rem;
+.contacto-container {
+  padding: 3rem 7rem;
+  font-family: "Merienda One", cursive;
 }
 
-.talleres-txt {
+.contacto-txt {
   text-align: left;
-}
-
-.talleres-img-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-bottom: 3rem;
-}
-
-.talleres-img {
-  margin-top: 0.5rem;
-  width: 33%;
-}
-
-@media only screen and (max-width: 900px) {
-  .talleres-img-box {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .talleres-img {
-    margin-top: 0.5rem;
-    width: 100%;
-  }
+  color: #4b4a4a
 }

@@ -34,15 +34,39 @@ const NavBar = ({
   };
 
   return (
-    <><div className="topline"></div>
-    <Navbar expand='lg' className='nav-container'>
+    <>
+      <div className='topline'>
+        <a
+          href='https://wa.me/542284581210?text=¡Hola!%20Quisiera%20hacerles%20una%20consulta'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <i className='fab fa-whatsapp'></i>
+        </a>
+        <a
+          href='https://www.instagram.com/libreriaaltamira/'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <i className='fab fa-instagram'></i>
+        </a>
+        <a
+          href='https://www.facebook.com/LibreriAltamira/'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <i className='fab fa-facebook'></i>
+        </a>
+      </div>
+      <Navbar expand='lg' className='nav-container'>
         <Navbar.Brand>
           <Link to='/'>
             <img
               width='100'
               className='d-inline-block align-top'
               src={logo}
-              alt='comarca de creadores logo' />
+              alt='comarca de creadores logo'
+            />
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
@@ -71,7 +95,8 @@ const NavBar = ({
           </Nav>
           <CartWidget />
         </Navbar.Collapse>
-      </Navbar></>
+      </Navbar>
+    </>
   );
 };
 

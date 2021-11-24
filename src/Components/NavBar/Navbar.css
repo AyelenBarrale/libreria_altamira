@@ -1,7 +1,20 @@
 .topline {
   background-color: #e35f21;
   width: 100%;
-  height: 30px;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 2rem;
+}
+
+.topline .fab {
+  padding: 0rem 0.7rem;
+}
+
+.topline .fab:hover {
+  color: #8a3813;
+  cursor: pointer;
 }
 
 .nav-container {
@@ -65,5 +78,8 @@ select:focus {
 
   .cart-button {
     margin-right: 1rem;
+  }
+  .topline {
+    visibility: hidden;
   }
 }
