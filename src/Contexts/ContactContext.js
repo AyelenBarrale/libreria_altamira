@@ -1,22 +1,16 @@
-import React, { createContext, useState, useContext } from "react";
+import React, { createContext, useState } from "react";
 import firebase from "firebase/app";
 import { db } from "../firebase";
 
-export const ContactContext = createContext({});
-export const useContactContext = () => useContext(ContactContext);
+export const ContactContext = createContext();
 
 const ContactProvider = ({ children }) => {
-  const [contactInfo, setContactInfo] = useState({});
   const [keyId, setKeyId] = useState(0);
 
-  const addContactInfo = (values) => {
-    setContactInfo(values);
-  };
-
-  const addContact = () => {
+  const addContact = (values) => {
     db.collection("consultas")
       .add({
-        contacto: contactInfo,
+        contacto: values,
         date: firebase.firestore.FieldValue.serverTimestamp(),
       })
       .then((docRef) => {
@@ -29,10 +23,9 @@ const ContactProvider = ({ children }) => {
 
   return (
     <ContactContext.Provider
-      values={{
+      value={{
         addContact,
         keyId,
-        addContactInfo,
       }}
     >
       {children}

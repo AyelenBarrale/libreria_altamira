@@ -1,11 +1,10 @@
-import React, { useState } from "react";
-import "../CheckoutForm/CheckoutForm.css"
+import React, { useState, useContext } from "react";
+import "../CheckoutForm/CheckoutForm.css";
 
-//import { useContactContext } from "../../Contexts/ContactContext";
+import { ContactContext } from "../../Contexts/ContactContext";
 
 const ContactForm = () => {
-
-  //const { addContactInfo } = useContactContext();
+  const { addContact } = useContext(ContactContext);
 
   const initialState = {
     nombre: "",
@@ -23,7 +22,7 @@ const ContactForm = () => {
 
   const handleOnSubmit = (event) => {
     event.preventDefault();
-    //addContactInfo(values);
+    addContact(values);
     setValues({ ...initialState });
   };
 
