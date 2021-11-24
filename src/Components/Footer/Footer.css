@@ -5,7 +5,7 @@ html {
 
 .footer-container {
   padding: 0.5rem 0;
-  background-color: rgb(204, 197, 197);
+  background-color: #e35f21;
   width: 100%;
   bottom: 0;
   position: absolute;
@@ -26,15 +26,16 @@ html {
 .fas {
   padding-right: 0.5rem;
   padding-top: 0.3rem;
-  color: rgba(43, 41, 41, 0.5);
+  color: white;
   cursor: pointer;
 }
 
 .txt-footer {
   text-align: center;
   padding: 0.2rem 0 0 0;
-  color: rgba(43, 41, 41, 0.5);
+  color: white;
   font-size: 0.8rem;
+  font-family: "Merienda One", cursive;
 }
 
 .footer-right {
@@ -53,6 +54,10 @@ html {
 .footer-right-2 {
   display: flex;
   justify-content: center;
+}
+
+.fab:hover {
+  color: #8a3813;
 }
 
 @media only screen and (max-width: 679px) {

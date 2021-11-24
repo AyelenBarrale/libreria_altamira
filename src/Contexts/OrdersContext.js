@@ -1,9 +1,9 @@
 import React, { createContext, useContext, useState } from "react";
 
-import { db } from "../firebase.js";
+import { db } from "../firebase";
 import { useCartContext } from "../Contexts/CartContext.js";
 
-import firebase from "firebase/compat/app";
+import firebase from "firebase/app";
 
 export const OrdersContext = createContext({});
 export const useOrdersContext = () => useContext(OrdersContext);
@@ -54,9 +54,9 @@ const OrdersProvider = ({ children }) => {
 
   const updateStock = () => {
     itemsCart.forEach(async (elem) => {
-      const product = await db.collection("productos").doc(elem.id).get();
+      const product = await db.collection("libreria").doc(elem.id).get();
       const ProdStock = product.data().stock - elem.quantity;
-      await db.collection("productos").doc(elem.id).update({
+      await db.collection("libreria").doc(elem.id).update({
         stock: ProdStock,
       });
     });

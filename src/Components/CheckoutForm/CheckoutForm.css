@@ -1,5 +1,6 @@
 .checkout-container {
   margin: 5%;
+  font-family: "Merienda One", cursive;
 }
 
 .checkout-titles {
@@ -22,8 +23,8 @@ h2 {
 
 .input-field {
   width: 70%;
-  background-color: rgb(167, 162, 162);
-  color: #ffffff;
+  background-color: #edd3c5;
+  color: #282828;
   border-radius: 5px;
   padding: 0.5rem;
   border: none;
@@ -31,7 +32,7 @@ h2 {
 }
 
 .input-field::placeholder {
-  color: #ffffff;
+  color: #5f5f5f;
 }
 
 .products-container {
@@ -57,7 +58,7 @@ h4 {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 3rem;
-  background-color: #c59940;
+  background-color: #e35f21;
   color: #ffffff;
   padding: 0.8rem 1.3rem;
   outline: none;
@@ -66,7 +67,7 @@ h4 {
 }
 
 .form-button:hover {
-  background-color: #7a602a;
+  background-color: #8a3813;
   cursor: pointer;
 }
 
@@ -75,5 +76,5 @@ h4 {
 }
 
 .resumen-container {
-  background-color: rgb(212, 212, 212);
+  background-color: #edd3c5;
 }

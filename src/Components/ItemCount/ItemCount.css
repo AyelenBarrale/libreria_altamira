@@ -12,7 +12,7 @@
 }
 
 .item-button {
-    background-Color: #c59940;
+    background-Color: #e35f21;
     color: #ffffff;
     padding: 0.2rem 0.7rem;
     outline: none;
@@ -21,7 +21,7 @@
 }
 
 .item-button:hover {
-    background-color: #7a602a;
+    background-color: #8a3813;
 }
 
 .cantidad-num {

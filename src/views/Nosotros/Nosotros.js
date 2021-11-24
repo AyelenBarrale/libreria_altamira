@@ -1,67 +1,29 @@
 import React from "react";
 import "./../Nosotros/Nosotros.css";
-import fundadores from "../Nosotros/img/vero-pablo.png";
-import espacio1 from "../Nosotros/img/espacio-1.jpg";
-import espacio2 from "../Nosotros/img/espacio-2.jpeg";
-import espacio3 from "../Nosotros/img/espacio-3.jpg";
+import logo from "../Nosotros/LA_logo.png";
 
 const Nosotros = () => {
   return (
     <>
       <div className='page-nosotros-container'>
         <div className='nosotros-descripcion'>
-          <h2>¿Qué es Comarca de Creadores?</h2>
+          <h2>Librería Altamira</h2>
           <p className='nosotros-txt'>
-            ¡Hola, somos Vero y Pablo! En Comarca creamos un espacio, ubicado
-            estrategicamente en Barrio General Paz, donde comercializamos
-            elementos para la creación.
+            El lugar para encontrar la mayor variedad y calidad de artículos
+            escolares, de oficina y libros.
+            <br></br>
+            En cada momento de tu día, siempre estamos junto a vos.
+            <br></br>
+            En tus cuadernos, libros o dibujos, en la escuela, oficina y en tu
+            casa acompañándote hace 20 años.
           </p>
-          <p className='nosotros-txt txt-mobile'>
-            Creamos un mix entre una artística, mercería y taller de
-            capacitaciones, par que cada persona que ingrese pueda encontrar
-            todo lo que necesita para su proyecto de reciclaje, restauración o
-            creación.<br></br>
-            Todos nuestros productos atienden a las tendencias en auge del
-            momento y contamos con modalidad de talleres libres, guiados por un
-            emprendedor especialista en el tema.
-          </p>
-          <p className='nosotros-txt txt-mobile'>
-            Tenemos una amplia red de proveedores que nos permiten brindarte
-            precio y calidad, sin necesidad de que te desplaces a la zona
-            céntrica de Córdoba para encontrar aquello que buscás.
-          </p>
-          <p className='nosotros-txt txt-mobile'>
-            Además, contamos con toda la maquinaria necesaria para un pequeño
-            taller de producción textil, y puedas utilizar este espacio para
-            producir.
-          </p>
-          <p className='nosotros-txt txt-mobile'>
-            También, ofrecemos a artísticas y creadores un punto de venta donde
-            pueden exhibir sus creaciones y comercializar las mismas, a través
-            de la modalidad de consignación.
+          <p className='nosotros-txt'>
+            Visitanos en nuestro local o consultanos por whatsapp por ventas
+            minoristas y mayoristas.
           </p>
         </div>
-        <div className='fundadores-img'>
-          <img src={fundadores} alt='fundadores-comarca' />
-        </div>
-      </div>
-      <div className='page-nosotros-container'>
-        <div className='espacio-img'>
-          <img
-            className='img-item'
-            src={espacio1}
-            alt='nuestro espacio para talleres'
-          />
-          <img
-            className='img-item'
-            src={espacio2}
-            alt='maquinaria para tu producción textil'
-          />
-          <img
-            className='img-item'
-            src={espacio3}
-            alt='nuestro espacio de mercería'
-          />
+        <div className='logo-img'>
+          <img src={logo} alt='libreria-altamira' className='logo-body' />
         </div>
       </div>
     </>

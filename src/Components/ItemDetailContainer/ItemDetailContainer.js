@@ -15,7 +15,7 @@ const ItemDetailContainer = () => {
 
   useEffect(() => {
     (async () => {
-      const producto = await db.collection("productos").doc(id).get();
+      const producto = await db.collection("libreria").doc(id).get();
       setItem({ id: producto.id, ...producto.data() });
       setIsLoading(false);
     })();

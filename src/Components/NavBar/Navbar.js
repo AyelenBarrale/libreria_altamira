@@ -1,10 +1,10 @@
 import React from "react";
-import logo from "./comarca-logo-ok.png";
+import logo from "./LA_ISOLOGOsinfondo.png";
 import "./Navbar.css";
 
 import CartWidget from "../Cart/CartWidget";
 
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Nav } from "react-bootstrap";
@@ -25,7 +25,7 @@ const NavBar = ({
   subitem9,
   subitem10,
 }) => {
-  const history = useNavigate();
+  const history = useHistory();
 
   const handleChange = (el) => {
     if (el.target.value) {
@@ -34,44 +34,69 @@ const NavBar = ({
   };
 
   return (
-    <Navbar expand='lg' className='nav-container'>
-      <Navbar.Brand>
-        <Link to='/'>
-          <img
-            width='200'
-            className='d-inline-block align-top'
-            src={logo}
-            alt='comarca de creadores logo'
-          />
-        </Link>
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls='basic-navbar-nav' />
-      <Navbar.Collapse id='basic-navbar-nav'>
-        <Nav className='ml-auto'>
-          <p className='buscar-txt'>{item1}</p>
-          <select className='select-container' onChange={handleChange}>
-            <option value='all'>{subitem0}</option>
-            <option value='escolar'>{subitem1} </option>
-            <option value='libros'>{subitem2} </option>
-            <option value='mochilas'>{subitem3} </option>
-            <option value='arte'>{subitem4} </option>
-            <option value='boligrafos'>{subitem5} </option>
-            <option value='oficina'>{subitem6} </option>
-            <option value='calculadoras'>{subitem7} </option>
-            <option value='globos terraqueos'>{subitem8} </option>
-            <option value='parker'>{subitem9} </option>
-            <option value='posca'>{subitem10} </option>
-          </select>
-          <Link to='/nosotros' className='Link'>
-            {item2}
+    <>
+      <div className='topline'>
+        <a
+          href='https://wa.me/542284581210?text=¡Hola!%20Quisiera%20hacerles%20una%20consulta'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <i className='fab fa-whatsapp'></i>
+        </a>
+        <a
+          href='https://www.instagram.com/libreriaaltamira/'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <i className='fab fa-instagram'></i>
+        </a>
+        <a
+          href='https://www.facebook.com/LibreriAltamira/'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <i className='fab fa-facebook'></i>
+        </a>
+      </div>
+      <Navbar expand='lg' className='nav-container'>
+        <Navbar.Brand>
+          <Link to='/'>
+            <img
+              width='100'
+              className='d-inline-block align-top'
+              src={logo}
+              alt='comarca de creadores logo'
+            />
           </Link>
-          <Link to='/contacto' className='Link'>
-            {item3}
-          </Link>
-        </Nav>
-        <CartWidget />
-      </Navbar.Collapse>
-    </Navbar>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls='basic-navbar-nav' />
+        <Navbar.Collapse id='basic-navbar-nav'>
+          <Nav className='ml-auto'>
+            <p className='buscar-txt'>{item1}</p>
+            <select className='select-container' onChange={handleChange}>
+              <option value='all'>{subitem0}</option>
+              <option value='Escolar'>{subitem1} </option>
+              <option value='Libros'>{subitem2} </option>
+              <option value='Mochilas'>{subitem3} </option>
+              <option value='Arte'>{subitem4} </option>
+              <option value='Boligrafos'>{subitem5} </option>
+              <option value='Oficina'>{subitem6} </option>
+              <option value='Calculadoras'>{subitem7} </option>
+              <option value='Globos Terraqueos'>{subitem8} </option>
+              <option value='Parker'>{subitem9} </option>
+              <option value='Posca'>{subitem10} </option>
+            </select>
+            <Link to='/nosotros' className='Link'>
+              {item2}
+            </Link>
+            <Link to='/contacto' className='Link'>
+              {item3}
+            </Link>
+          </Nav>
+          <CartWidget />
+        </Navbar.Collapse>
+      </Navbar>
+    </>
   );
 };
 

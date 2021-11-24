@@ -1,38 +1,22 @@
 import React from "react";
 import "./Contacto.css";
 
-import bordado from "../Talleres/img/bordado-mex.png";
-import macrame from "../Talleres/img/macrame.png";
-import molderia from "../Talleres/img/molderia.png";
-import mosaiquismo from "../Talleres/img/mosaiquismo.png";
-import pintura from "../Talleres/img/pintura.png";
-import sublimacion from "../Talleres/img/sublimacion.png";
+import ContactForm from "../../Components/ContactForm/ContactForm.js";
 
-const Talleres = () => {
+const Contacto = () => {
   return (
-    <div className='talleres-container'>
-      <h2>Aprendé con nosotros</h2>
-      <p className='talleres-txt'>
-        Contactanos vía whatsapp para consultar disponibilidad y cupo.
+    <div className='contacto-container'>
+      <h2>Pongámonos en contacto</h2>
+      <p className='contacto-txt'>
+        Estamos a tu disposición, aguardando tu contacto. 
+        <br></br>
+        Podés escribirnos a
+        través de este formulario o vía whatsapp. Elegí tu opción preferida y
+        realizá tu consulta.
       </p>
-      <div className='talleres-img-box'>
-        <img className='talleres-img' src={bordado} alt='taller de bordado' />
-        <img className='talleres-img' src={macrame} alt='taller de macrame' />
-        <img className='talleres-img' src={molderia} alt='taler de molderia' />
-        <img
-          className='talleres-img'
-          src={mosaiquismo}
-          alt='taller de mosaiquismo'
-        />
-        <img className='talleres-img' src={pintura} alt='taller de pintura' />
-        <img
-          className='talleres-img'
-          src={sublimacion}
-          alt='taller e sublimacion'
-        />
-      </div>
+      <ContactForm />
     </div>
   );
 };
 
-export default Talleres;
+export default Contacto;

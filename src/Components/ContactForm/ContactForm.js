@@ -1,15 +1,17 @@
-import React, { useState } from "react";
-import "../CheckoutForm/CheckoutForm.css";
+import React, { useState, useContext } from "react";
+import "../CheckoutForm/CheckoutForm.css"
 
-import { useOrdersContext } from "../../Contexts/OrdersContext";
+import { ContactContext } from "../../Contexts/ContactContext";
 
-const CheckoutForm = () => {
-  const { addOrdenInfo } = useOrdersContext();
+const ContactForm = () => {
+
+  const { addContact } = useContext(ContactContext);
 
   const initialState = {
     nombre: "",
     telefono: "",
     email: "",
+    mensaje: "",
   };
 
   const [values, setValues] = useState(initialState);
@@ -21,16 +23,12 @@ const CheckoutForm = () => {
 
   const handleOnSubmit = (event) => {
     event.preventDefault();
-    addOrdenInfo(values);
+    addContact(values);
     setValues({ ...initialState });
   };
 
   return (
     <div className='checkout-container'>
-      <div className='checkout-titles'>
-        <h2>A un click de tu pedido</h2>
-        <p>Completá los datos solicitados y luego confirmá tu pedido</p>
-      </div>
       <form className='form-container' onSubmit={handleOnSubmit}>
         <div>
           <input
@@ -40,6 +38,7 @@ const CheckoutForm = () => {
             onChange={handleOnChange}
             name='nombre'
             value={values.nombre}
+            autoComplete='off'
           />
         </div>
         <div>
@@ -50,24 +49,37 @@ const CheckoutForm = () => {
             onChange={handleOnChange}
             name='telefono'
             value={values.telefono}
+            autoComplete='off'
+          />
+        </div>
+        <div>
+          <input
+            className='input-field'
+            type='email'
+            placeholder='E mail'
+            onChange={handleOnChange}
+            name='email'
+            value={values.email}
+            autoComplete='off'
           />
         </div>
         <div>
           <input
             className='input-field'
             type='text'
-            placeholder='E mail'
+            placeholder='Mensaje'
             onChange={handleOnChange}
-            name='email'
-            value={values.email}
+            name='mensaje'
+            value={values.mensaje}
+            autoComplete='off'
           />
         </div>
         <button type='submit' className='form-button'>
-          Continuar
+          Enviar Consulta
         </button>
       </form>
     </div>
   );
 };
 
-export default CheckoutForm;
+export default ContactForm;
