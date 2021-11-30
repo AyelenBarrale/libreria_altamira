@@ -1,0 +1,41 @@
+.page-nosotros-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 3rem 7rem;
+  font-family: "Merienda One", cursive;
+}
+
+h2 {
+  padding-bottom: 2rem;
+}
+
+.nosotros-txt {
+  text-align: left;
+}
+
+.logo-img {
+  margin-bottom: 10%;
+}
+
+.logo-body {
+  width: 100%;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 900px) {
+  .page-nosotros-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .nosotros-descripcion {
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  .logo-img img {
+    width: 100%;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+  }
+}
