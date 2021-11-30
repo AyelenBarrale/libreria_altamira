@@ -3,7 +3,6 @@ import "../Home/Home.css"
 import ItemListContainer from "../../Components/ItemListContainer/ItemListContainer";
 
 import slider from "./slider.png"
-import WhatsappFloat from "../../Components/WhatsappFloat/WhatsappFloat";
 
 const Home = () => {
   return (
