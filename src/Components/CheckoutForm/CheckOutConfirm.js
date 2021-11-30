@@ -12,7 +12,10 @@ const CheckOutConfirm = () => {
       <div className='checkout-titles'>
         <h2>Sólo queda un paso</h2>
         <p>Confirmá tu pedido y tu orden será enviada.</p>
-        <p>Serás redigido para establecer contacto a través whatsapp y poder finalizar tu compra.</p>
+        <p>
+          Serás redirigido para establecer contacto a través whatsapp y poder
+          finalizar tu compra.
+        </p>
       </div>
       <div className='resumen-container'>
         <h4>Resumen de pedido</h4>
