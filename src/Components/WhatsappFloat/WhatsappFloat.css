@@ -24,3 +24,9 @@
 .my-float{
 	padding-left: 10px;
 } 
+
+@media only screen and (max-width: 679px) {
+	.float {
+			display: none;
+	}
+}
