@@ -1,7 +1,8 @@
 import React, { useState, useContext } from "react";
-import "../CheckoutForm/CheckoutForm.css"
+import Swal from 'sweetalert2';
 
 import { ContactContext } from "../../Contexts/ContactContext";
+import "../CheckoutForm/CheckoutForm.css"
 
 
 const ContactForm = () => {
@@ -25,7 +26,11 @@ const ContactForm = () => {
   const handleOnSubmit = (event) => {
     event.preventDefault();
     if (values.nombre === "" || values.email === "" || values.mensaje === "") {
-      return alert("Completar todos los datos")
+      return Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Todos los campos deben ser completados'
+      })
     }
     addContact(values);
     setValues({ ...initialState });

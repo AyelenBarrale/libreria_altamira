@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import "../CheckoutForm/CheckoutForm.css";
+import Swal from 'sweetalert2';
 
 import { useOrdersContext } from "../../Contexts/OrdersContext";
+import "../CheckoutForm/CheckoutForm.css";
 
 const CheckoutForm = () => {
   const { addOrdenInfo } = useOrdersContext();
@@ -22,7 +23,11 @@ const CheckoutForm = () => {
   const handleOnSubmit = (event) => {
     event.preventDefault();
     if (values.nombre === "" || values.telefono === "" || values.email === "") {
-      return alert("Completar todos los datos")
+      return Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Todos los campos deben ser completados'
+      })
     }
     addOrdenInfo(values);
     setValues({ ...initialState });
